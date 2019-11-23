@@ -1,6 +1,6 @@
 - id: check-id
   name: check-id
   description: Check email and username before comitting
-  language: bash
+  language: script
   entry: check-id.sh
   verbose: true
