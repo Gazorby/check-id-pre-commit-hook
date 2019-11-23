@@ -32,11 +32,11 @@ if [[ "$USERNAME" != "$2" ]]
     exit 1
   fi
 }
-if [[ $REMOTE == *"gitlab.unifeyes.com"* ]]
+if [[ $REMOTE == *"$GIT_REMOTE_PRO"* ]]
 then
-  checkEmailUsername matthieu.macnab@h2ofintech.com "Matthieu Mac Nab"
+  checkEmailUsername "$GIT_PRO_EMAIL" "$GIT_PRO_USERNAME"
 fi
-if [[ $REMOTE == *"github.com"* ]]
+if [[ $REMOTE == *"$GIT_REMOTE_PERSO"* ]]
 then
-  checkEmailUsername mmacnab22@gmail.com "gazorby"
+  checkEmailUsername "$GIT_PERSO_EMAIL" "$GIT_PERSO_USERNAME"
 fi
