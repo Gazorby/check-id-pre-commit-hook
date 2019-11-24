@@ -32,11 +32,11 @@ if [[ "$USERNAME" != "$2" ]]
     exit 1
   fi
 }
-if [[ $REMOTE == *"$GIT_REMOTE_PRO"* ]]
+if [[ $REMOTE == *"$GIT_PRO_REMOTE"* ]]
 then
   checkEmailUsername "$GIT_PRO_EMAIL" "$GIT_PRO_USERNAME"
 fi
-if [[ $REMOTE == *"$GIT_REMOTE_PERSO"* ]]
+if [[ $REMOTE == *"$GIT_PERSO_REMOTE"* ]]
 then
   checkEmailUsername "$GIT_PERSO_EMAIL" "$GIT_PERSO_USERNAME"
 fi
